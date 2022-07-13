@@ -1,0 +1,1 @@
+document.write(' 내이름은 이진형')
