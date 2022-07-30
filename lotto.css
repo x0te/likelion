@@ -1,0 +1,33 @@
+.ball{
+    float:left;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0px 0px 3px rgba(73, 57, 0, .8);
+    margin-right: 6px;
+}
+
+.ball1 {
+    background: yellow;
+}
+.ball2 {
+    background: red;
+}
+.ball3 {
+    background: blue;
+}
+.ball4 {
+    background: purple;
+}
+.ball5{
+    background: green;
+}
+.ball6{
+    background: black;
+}

@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>로또 번호 추첨기 1</title>
+    <link rel="stylesheet" href="lotto.css">
 
 </head>
 
 <body>
-    <h1>로또 번호 추첨기 1</h1>
+    <h1>로또 번호 추첨기</h1>
     <script>
-        var num = Math.random() * 45 + 1; //math.random = 0~1 랜덤수
-        var ball1 = parseInt(num); // 정수로 변환
-        document.write(ball1);
+        // var num = Math.random() * 45 + 1; //math.random = 0~1 랜덤수
+        // var ball1 = parseInt(num); // 정수로 변환
+        var lotto = [];
+        //for (var i =0; i <6; i++){
+        while(lotto.length < 6){
+            var num = parseInt(Math.random() * 45 + 1);
+            if(lotto.indexOf(num) == -1){
+                //중복숫자 피하기 위함
+                //indexof(값) -> 값이 있으면 위치, 없으면 -1 반환
+                lotto.push(num);
+            }
+        }
+        lotto.sort((a,b)=>a-b)//오름차순 정렬
+        document.write("<div class='ball ball1'>"+ lotto[0] + "</div>");
+        document.write("<div class='ball ball2'>"+ lotto[1] + "</div>");
+        document.write("<div class='ball ball3'>"+ lotto[2] + "</div>");
+        document.write("<div class='ball ball4'>"+ lotto[3] + "</div>");
+        document.write("<div class='ball ball5'>"+ lotto[4] + "</div>");
+        document.write("<div class='ball ball6'>"+ lotto[5] + "</div>");
 
     </script>
 
