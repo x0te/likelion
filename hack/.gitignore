@@ -175,4 +175,5 @@ cython_debug/
 
 
 venv/
-.env
+.env/
+--pycache__/
